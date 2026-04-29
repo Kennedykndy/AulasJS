@@ -30,8 +30,20 @@ switch (diaSemana) {
 // Desafio 2 - Operadores Lógicos
 let numero = 15;
 
-if ((numero >= 10 && numero <= 20) || numero === 5) {
-  console.log("O número está entre 10 e 20 (inclusive) ou é igual a 5.");
+if (numero >= 10 && numero <= 20) {
+  console.log("O número está entre 10 e 20.");
+} else if (numero === 5) {
+  console.log("Seu número é igual a 5.");
 } else {
   console.log("O número NÃO atende à condição.");
+}
+
+// Desafio 3
+let nome = "Kennedy Henrique";
+let sobrenome = "Henrique";
+
+if (nome === sobrenome) {
+  console.log("Os nomes são iguais.");
+} else {
+  console.log("Os nomes são diferentes.");
 }
