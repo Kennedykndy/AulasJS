@@ -6,24 +6,23 @@ console.log(numParOuImpar(2)); // true
 console.log(numParOuImpar(3)); // false
 
 // Exercício 2
-function calcularMedia(numeros) {
-  if (!Array.isArray(numeros) || numeros.length === 0) {
-    return null;
+function mediaAritmetica(arr) {
+  let soma = 0;
+  for (let i = 0; i < arr.length; i++) {
+    soma += arr[i];
   }
-
-  const soma = numeros.reduce((total, num) => total + num, 0);
-  return soma / numeros.length;
+  return soma / arr.length;
 }
-
-const conjunto = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-console.log(calcularMedia(conjunto)); // 20
+console.log(mediaAritmetica([2, 4, 6, 8])); // 5
+console.log(mediaAritmetica([8, 8, 6, 8])); // 7.5
 
 // Exercício 3
-const nome = "Kennedy Henrique";
-for (let char of nome) {
-  console.log(char);
+function converterParaMaiuscula(str) {
+  return str.toUpperCase();
 }
+
+console.log(converterParaMaiuscula("olá, mundo!"));
+console.log(converterParaMaiuscula("javascript é incrível!"));
 
 // Exercício 4
 function numPrimo(numero) {
